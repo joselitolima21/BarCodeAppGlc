@@ -10,14 +10,20 @@ export default function permissao({ route, navigation }) {
     await ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE_RIGHT);
   }
   useEffect(()=>{
-     changeScreenOrientation() 
+     changeScreenOrientation()
   },[navigation])
   return (
     
     <>
     <StatusBar style="light" />
     <WebView 
-        source={{ uri: `http://192.168.0.231:1221/${id}` }}
+        source={{ 
+          uri: `http://191.189.243.14:4312/${id}`,
+          headers: {
+            Authorization: process.env.TOKEN,
+          }
+      }}
+        
     />
     </>
   );

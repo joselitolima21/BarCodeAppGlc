@@ -1,7 +1,11 @@
-{
-  "expo": {
+import 'dotenv/config';
+
+export default {
     "name": "BarCodeApp3",
     "slug": "barcodeapp3",
+    extra: {
+      enableComments: process.env.COOLAPP_COMMENTS === 'true',
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -32,5 +36,4 @@
       "favicon": "./assets/favicon.png"
     },
     "description": ""
-  }
 }
