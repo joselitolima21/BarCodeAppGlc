@@ -39,7 +39,6 @@ export default function qrReader({ navigation }) {
       Alert.alert('Aviso','O QRcode que você tentou ler não é uma permissão digital ou está rasurado.\n\nCaso esteja rasurado o pemissionário deve solicitar outra pemissão digital na GLC-STRANS')
     } else {
       setScanned(true);
-      console.log(id)
       navigation.navigate("Permissao", {id})
     }
   };
@@ -97,7 +96,7 @@ const styles = StyleSheet.create({
     width: 300,
     overflow: 'hidden',
     borderRadius: 30,
-    backgroundColor: 'tomato'
+    backgroundColor: '#E2A900'
   },
   web: {
     alignItems: 'center',

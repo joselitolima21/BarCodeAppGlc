@@ -12,7 +12,18 @@ export default function App() {
     return ( 
     <NavigationContainer >
         <Stack.Navigator>
-            <Stack.Screen  name="QRreader" component={qrReader} />
+            <Stack.Screen  options={{
+          title: "Permissão Digital",
+          headerTitleAlign: 'center',
+          headerStyle: {
+            backgroundColor: '#E2A900',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+        name="Permissão Digital" component={qrReader} />
             <Stack.Screen options={{headerShown: false}} name="Permissao" component={permissao} />
         </Stack.Navigator>
     </NavigationContainer>    

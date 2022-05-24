@@ -1,8 +1,8 @@
 import 'dotenv/config';
 
 export default {
-    "name": "BarCodeApp3",
-    "slug": "barcodeapp3",
+    "name": "Leitor de permissão",
+    "slug": "leitorpermissaodigital",
     extra: {
       enableComments: process.env.COOLAPP_COMMENTS === 'true',
     },
